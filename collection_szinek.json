@@ -1,0 +1,69 @@
+{
+    "clientName": "Thunder Client",
+    "collectionName": "szinek",
+    "collectionId": "a614f5a0-e86c-42bb-a936-5797a0ff4c7e",
+    "dateExported": "2025-01-27T10:49:53.985Z",
+    "version": "1.2",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "b07fda26-6d5e-4cb7-8dbf-2dc7e12718ac",
+            "colId": "a614f5a0-e86c-42bb-a936-5797a0ff4c7e",
+            "containerId": "",
+            "name": "localhost:88/szinek",
+            "url": "localhost:88/szinek",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2025-01-27T10:47:57.765Z",
+            "modified": "2025-01-27T10:47:57.765Z",
+            "headers": []
+        },
+        {
+            "_id": "a9fb63ca-905e-40cb-8dac-e0c5d4bc91f1",
+            "colId": "a614f5a0-e86c-42bb-a936-5797a0ff4c7e",
+            "containerId": "",
+            "name": "localhost:88/szin",
+            "url": "localhost:88/szin",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2025-01-27T10:48:03.913Z",
+            "modified": "2025-01-27T10:48:03.913Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{ \"nev\":\"piros\", \"kod\":\"#FF0000\" }",
+                "form": []
+            }
+        },
+        {
+            "_id": "413fbe66-a0bc-4026-bca1-64f9aad401f8",
+            "colId": "a614f5a0-e86c-42bb-a936-5797a0ff4c7e",
+            "containerId": "",
+            "name": "localhost:88/szin/1",
+            "url": "localhost:88/szin/2",
+            "method": "DELETE",
+            "sortNum": 30000,
+            "created": "2025-01-27T10:48:13.025Z",
+            "modified": "2025-01-27T10:48:13.025Z",
+            "headers": []
+        },
+        {
+            "_id": "d7ad7171-2bb4-4976-8e4c-4f07910660c2",
+            "colId": "a614f5a0-e86c-42bb-a936-5797a0ff4c7e",
+            "containerId": "",
+            "name": "localhost:88/szin/2",
+            "url": "localhost:88/szin/1",
+            "method": "PUT",
+            "sortNum": 40000,
+            "created": "2025-01-27T10:48:17.681Z",
+            "modified": "2025-01-27T10:48:17.681Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{ \"nev\":\"piros\", \"kod\":\"#FF0000\" }",
+                "form": []
+            }
+        }
+    ],
+    "ref": "SV7WmTZjn2azC_IcJV_LJ7bueWIJtX2c36kQmKCuUgl8Wj9Yy08yoa42tkagCcDxSW5mV-f6j_YLD7umcgyRoA"
+}
