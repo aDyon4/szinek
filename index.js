@@ -18,9 +18,9 @@ function addSzin(req, resp){
         let szin = { id: nextId, nev: req.body.nev, kod: req.body.kod };
         nextId++;
         szinek.push(szin)
-        resp.send(szin);
+        resp.status(200).send(szin);
     }
-    else { resp.send({error: 'Hibás paraméterek'}) }
+    else { resp.status(400).send({error: 'Hibás paraméterek'}) }
 }
 
 function putSzin(req, resp){
@@ -30,9 +30,9 @@ function putSzin(req, resp){
             let szin = { id: req.params.id, nev: req.body.nev, kod: req.body.kod };
             nextId++;
             szinek[i] = szin;
-            resp.send(szin);
+            resp.status(200).send(szin);
         }
-    }
+    }else { resp.status(400).send({error: 'Hibás paraméterek'}) }
 }
 
 function delSzin(req, resp){
@@ -40,9 +40,9 @@ function delSzin(req, resp){
         let i = indexOf(req.params.id);
         if(i!=-1){
             szinek.splice(i, 1)
-            resp.send(szinek[0]);
-        }
-    }
+            resp.status(200).send(szinek[0]);
+        } else resp.status(404).send({error:'hibás id'})
+    } else resp.status(404).send({error:'nem létező id'})
 }
 
 function indexOf(id){
